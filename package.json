@@ -1,0 +1,13 @@
+{
+  "name": "book-cru",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "jsdom": "^16.6.0",
+    "node-fetch": "^2.6.1",
+    "node-schedule": "^2.0.0",
+    "xpath-html": "^1.0.2"
+  }
+}
