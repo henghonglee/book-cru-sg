@@ -16,7 +16,7 @@ const date = result[1];
 const classid = result[0];
 console.log(`classid = ${classid}, date = ${date}`);
 
-if (date == "16.09") {
+if (date == "23.09") {
   console.log("Right date");
   await bookClassAll(classid);
 } else {
@@ -54,7 +54,7 @@ async function getCookies(ck) {
   const params = new URLSearchParams();
   params.append("action", "Account.doLogin");
   params.append("username", "henghong.lee@gmail.com");
-  params.append("password", "<password here>");
+  params.append("password", "");
   params.append("site", 1);
 
   const response = await fetch("https://cru68.zingfit.com/reserve/index.cfm", {
