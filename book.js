@@ -54,7 +54,7 @@ async function getCookies(ck) {
   const params = new URLSearchParams();
   params.append("action", "Account.doLogin");
   params.append("username", "henghong.lee@gmail.com");
-  params.append("password", "");
+  params.append("password", "2cycle");
   params.append("site", 1);
 
   const response = await fetch("https://cru68.zingfit.com/reserve/index.cfm", {
@@ -70,9 +70,6 @@ async function getCookies(ck) {
 
 async function bookClassAll(classid) {
   const cookies = await getCookies();
-  // new Worker("./book_worker.js", {
-  //   workerData: { classid, spotid: 8, cookies },
-  // });
   const possible_spots = Array.from(Array(30).keys()).reverse();
   for (const spotid of possible_spots) {
     new Worker("./book_worker.js", {

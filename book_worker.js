@@ -25,7 +25,7 @@ async function bookClassSpot(classid, spotid, cookies) {
   // Spot booking
   const action = "Reserve.book";
   const seriesorderitemid = "1409348269619808180";
-  const st = "d80439bd-e89a-4101-bd69-3a09fec10a1b"; // This ST is impt. need to update everytime until i figure out how to get it programatically
+  const st = "3168cffd-55a1-465c-a34e-03144767aae6"; // This ST is impt. need to update everytime until i figure out how to get it programatically
   const response = await fetch(
     `https://cru68.zingfit.com/reserve/index.cfm?action=${action}&classid=${classid}&spotid=${spotid}&seriesorderitemid=${seriesorderitemid}&st=${st}&site=1`,
     {
